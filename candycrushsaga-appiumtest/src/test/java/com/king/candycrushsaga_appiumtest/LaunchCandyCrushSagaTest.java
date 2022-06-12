@@ -80,7 +80,7 @@ public class LaunchCandyCrushSagaTest {
 		//Click the Play button position on the screen
 		touch.tap(PointOption.point(514, 1176)).perform();
 	
-		//Wait for the game start
+		//Wait for the game start scene
 		Thread.sleep(15000);
 
 		//Click on the screen to start tutorial
