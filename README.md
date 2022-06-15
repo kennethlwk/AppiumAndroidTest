@@ -60,7 +60,7 @@
 4) Start the Appium Server to observe the activities that have been performed on the Android Emulator.
 5) Finally, start to run the LaunchCandyCrushSagaTest.java on your IDE tool and observe the scene changes on the Android Emulator, and also check the live traffic logs on Appium Server to see the requests that have been sent to the emulator.
 6) Video below shows the demo on how to launch the test automation code.
-https://user-images.githubusercontent.com/22057288/173817968-0250052e-ee06-4896-8c89-9a173b681a43.mp4
+7) https://user-images.githubusercontent.com/22057288/173817968-0250052e-ee06-4896-8c89-9a173b681a43.mp4
 
 ## Code Implementation
 The LaunchCandyCrushSagaTest.java class is the main file that contains all the logic in the code, and it is located at the file path below.This is the main class where we run the application. 
