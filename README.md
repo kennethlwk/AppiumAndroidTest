@@ -9,7 +9,7 @@
 1) Download Appium 
     - https://github.com/appium/appium-desktop/releases
     - Makesure you have correct host and port configured 
-     ![image](https://user-images.githubusercontent.com/22057288/173740849-8445ca23-0301-4e83-97d8-25696ffd7712.png)
+    - ![image](https://user-images.githubusercontent.com/22057288/173740849-8445ca23-0301-4e83-97d8-25696ffd7712.png)
 2) Download Android Studio
     - https://developer.android.com/studio
     - Open Android Studio App, and create a New empty project
@@ -23,7 +23,7 @@
     - ![image](https://user-images.githubusercontent.com/22057288/173741422-13fdf66e-0543-43a7-a79a-7a15d9283147.png)
 3) Download and install candycrushsaga.apk 
     - Download the candy crush saga apk file on your laptop's websrowaser
-	- Drag the drop the  candycrushsaga.apk file from your laptop into the Android Simulator to trigger the game installation
+    - Drag and drop the  candycrushsaga.apk file from your laptop into the Android Simulator to trigger the game installation
 3) Download Yur IDE InteliJ 0r Eclipse
     - https://www.eclipse.org/downloads/
 5) Download & Install appium inspector
@@ -35,10 +35,10 @@
 5) Download & install java jdk
     - https://www.eclipse.org/downloads/
 7) Setup Xsystem Environment Variables
-    - JAVA HOME
+    	- JAVA HOME
 		i. Add new System Variable -JAVA_HOME
 		ii. C:\Program Files\Java\jdk-11.0.14
-	- ANDROID HOME
+     	- ANDROID HOME
 		i. Add new System Variable - ANDROID_HOME
 		ii. C:\Users\kenneth\AppData\Local\Android\Sdk
 	- Platform Tool
@@ -50,19 +50,13 @@
 		ii. C:\Users\kenneth\AppData\Local\Android\Sdk\build-tools
 	- Tool
 		i. Edit "Path" in System Variable , and add New 
-        ii. C:\Users\kenneth\AppData\Local\Android\Sdk\tools
+               ii. C:\Users\kenneth\AppData\Local\Android\Sdk\tools
 
 ## Execute the game
 1) To execute the game, please clone the repo to yout local repository
 2) Import the maven project from your local repo to your prefer Java IDE tool, I am recommending to use Eclipse for this.
-3) Start the Android Studio Simulator
-    - And create a New empty project
-    - Open Device Manage
-    - Click "Create Virtual Devices" button
-    - Select an android "Phone" device from the virtual devices list , and select the Android version software for the virtual device
-	- Click the "Play" button on the created virtual Device
-	- Virtual Device will show up automatically 
-4) Start the Appium Server to observe the activties that has been performed on the Android Simulator
+3) Start the Android Studio Simulator, click "Play" button on the Android Simulator whis has the candycrushsaga game installed.
+4) Start the Appium Server to observe the activties that has been performed on the Android Simulator.
 5) Finally, start to run the LaunchCandyCrushSagaTest.java on your IDE device and observe the scene changes on the Android Simulator, and also check the live traffic logs on Appium Server to see the request that has been sent to the simulator.
 
 ## Code Implementation
@@ -90,6 +84,7 @@ The code below is the main method,  and it consists of the method to setupAndroi
 		performActionsOnAndroidDevice(cap);
 	}
 ```
+
 The io.appium dependency is added in the pom.xml in order to fetch the external dependecies to local
 ```java
     <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
